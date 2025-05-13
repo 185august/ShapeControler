@@ -1,15 +1,9 @@
 namespace ShapeControl;
 
-public abstract class Form
+public abstract class Shape(string name, string color)
 {
-    protected string Name { get; }
-    protected string Color { get; }
-
-    protected Form(string name, string color)
-    {
-        Name = name;
-        Color = color;
-    }
+    public string Name { get; private set; } = name;
+    public string Color { get; private set; } = color;
     
-    public abstract double CalulateArea();
+    public abstract double CalculateArea();
 }

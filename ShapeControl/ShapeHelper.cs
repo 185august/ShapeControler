@@ -1,6 +1,6 @@
 namespace ShapeControl;
 
-public static class ShapeInterface
+public static class ShapeHelper
 {
     public static void ViewAll(List<Shape> shapes)
     {
